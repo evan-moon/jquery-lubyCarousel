@@ -1,0 +1,93 @@
+@charset "utf-8";
+/*CSS RESET*/
+body { display: block; }
+
+.lubyImageSlider {
+    position: relative;
+    display: block;
+    background: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+    .lubyImageSlider .img-slider-viewer {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .lubyImageSlider .img-slider-item-wrapper {
+        position: relative;
+        left: 0;
+    }
+        .lubyImageSlider .img-slider-list-wrapper {
+            top: 0;
+            display: inline-block;
+            width: 100%;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+            .lubyImageSlider .img-slider-list-wrapper li {
+                display: inline-block;
+                overflow: hidden;
+                background: #ffffff;
+                cursor: pointer;
+                float: left;
+                text-align: center;
+                box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                transition: opacity 0.2s;
+            }
+                .lubyImageSlider .img-slider-list-wrapper li:hover {
+                    opacity: 0.7;
+                }
+            .lubyImageSlider .img-slider-list-wrapper a {
+                cursor: pointer;
+            }
+            .lubyImageSlider .img-slider-list-wrapper img {
+                height: 100%;
+                margin-left: -16px;
+                vertical-align: middle;
+            }
+    .lubyImageSlider .img-slider-arrow {
+        position: absolute;
+        top: 50%;
+        font-size: 50px;
+        color: #444444;
+        cursor: pointer;
+        transition: opacity 0.2s;
+    }
+        .lubyImageSlider .img-slider-arrow:hover {
+            opacity: 0.7;
+        }
+        .lubyImageSlider .img-slider-arrow[data-value='left'] {
+            left: -50px;
+        }
+        .lubyImageSlider .img-slider-arrow[data-value='right'] {
+            right: -50px;
+        }
+    .lubyImageSlider .img-slider-nav {
+        display: inline-block;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+        .lubyImageSlider .img-slider-nav .img-slider-nav-bt {
+            display: inline-block;
+            width: 20px;
+            height: 7px;
+            margin: 0px 7px;
+            background: #444444;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+            .lubyImageSlider .img-slider-nav .img-slider-nav-bt.selected {
+                background: #48cfad;
+            }
+            .lubyImageSlider .img-slider-nav .img-slider-nav-bt:hover {
+                opacity: 0.7;
+            }
+
+ 
+
+
